@@ -1,0 +1,313 @@
+
+/*-------This is for the banner pcoffee shop----------------*/
+#intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color:#ffd31d;
+  align-items: center;
+}
+#intro .Introduction {
+  margin: 0;
+  width: calc(33% - .4em);
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mainImg {
+  margin-left: auto;
+  margin-left: 0;
+  max-width: 350px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+
+/*----------- globals -------------------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+h1 {
+  border: 0;
+  color: #0779e4;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+h2 {
+  border: 0;
+  color : #272727 ;/* #0d101a; */
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+h3 {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+
+h4 {
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+label {
+  font-size: 0.7rem;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+
+}
+/*- Common to both Catalogue section & Order Details section ----------------*/
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .50em .67em;
+    cursor: pointer;
+    margin-left:10px;
+
+}
+
+.btn-primary {
+    color: white;
+    background-color: #32e0c4;
+    border: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+.btn-primary:hover {
+    background-color: #3ca59d;
+}
+.btn-secondary {
+    color: white;
+    background-color:#fb7813;
+    border: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+.btn-secondary:hover {
+    background-color:#cf7500 ;
+}
+/*-------------- Catalogue section ----------------------------------*/
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item {
+    margin: 30px;
+    border:1px solid;
+}
+.shop-item-title {
+    display: block;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #4c4e61;
+    font-family: 'Poppins', sans-serif;
+}
+.shop-item-image {
+    width: 20%;
+    height:auto;
+}
+.shop-item-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #4c4e61;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-------------- Order details section ----------------------------------*/
+.section-header {
+    font-family: 'Poppins', sans-serif;;
+    font-weight: normal;
+    color: #4c4e61;
+    text-align: center;
+    font-size: 2.5em;
+}
+.cart-row {
+    display: flex;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-item {
+    width: 45%;
+}
+.cart-header {
+  font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4c4e61;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4c4e61;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-price {
+  font-family: 'Poppins', sans-serif;
+    width: 20%;
+    font-size: 1.2em;
+    color: #4c4e61;
+}
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title {
+  font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #4c4e61;
+    margin-right: 20px;
+}
+.cart-total-price {
+  font-family: 'Poppins', sans-serif;
+    color: #4c4e61;
+    font-size: 1.1em;
+}
+
+.cart-item-title {
+    color:#4c4e61;
+    font-family: 'Poppins', sans-serif;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.btn-danger {
+  font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.btn-purchase {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+}
+
+.btn-addFavToOrder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+/*-------- footer ----------------------------*/
+
+.footer-text {
+  color: #4c4e61;
+  padding: 3px 0 0 0px;
+  font-size: 6px;
+}
+
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #4c4e61;
+  font-size: 5px;
+}
+
+.footer-bottomline {
+  background-color: #ffd31d;
+  padding: 10px 0 10px 0;
+}
+
+.footer-bottomline_text {
+  font-size: .6em;
+  font-style: italic;
+}
+
+/*==================================================*/

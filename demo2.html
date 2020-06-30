@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is a site that shows my personal portfolio">
+  <title>Aaron : Skills: Demo2</title>
+  <link href="style/demo2.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+  <!--  this is the header section : includes nav bar and banner  ==================-->
+  <header>
+    <nav class="mainNav">
+      <ul>
+        <li><a href="index.html"><span class="navText">Home</span></a></li>
+        <li><a href="qualifications.html"><span class="navText">Qualifications</span></a></li>
+        <li><a href="skills.html"><span class="navText">Skills</span></a></li>
+      </ul>
+    </nav>
+    <div id="intro">
+      <section class="Introduction">
+        <h2>CYBER SECURITY</h2>
+        <h1>CSS Demo 2</h1>
+      </section>
+      <section class="Introduction">
+        <img class="mainImg" src="./images/Security.png" alt="main"/>
+      </section>
+    </div>
+  </header>
+  <main>
+    <!--  this is the first section ;=============================-->
+    <br />
+    <div class="container">
+      <section class="tile cyberSec-def">
+        <h4>A DEFINITION OF CYBER SECURITY</h4>
+        <p class="tile-animation">Cyber security is the technologies,processes and practices
+          made to protect networks, data, devices and proggrames from unauthorized access,damage or attacks. Cyber security may
+          also be known as information technology security.</p>
+      </section>
+      <br />
+
+      <!--  this is the second section ; =============================-->
+      <section class="tile cyberSec-imp">
+        <h4>THE IMPORTANCE OF CYBER SECURITY</h4>
+        <p class="tile-animation">Cyber security is important because many organizatons collect, process, and store
+          huge amounts of data on devices.
+          A large portion of that data can be sensitive information such as
+          intellectual property, financial data, personal
+          information, or other types of data which unauthorized access
+          or exposure would be a huge problem. Organizations communicate
+          sensitive data through networks and to other devices while
+          doing businesses. cyber securityhelpd explain the protocols meant
+          to protecting that information and the systems used. </p>
+      </section>
+      <br />
+      <!--  this is the third section ;=============================-->
+      <section class="tile cyberSec-Chall">
+        <h4>CHALLENGES OF CYBER SECURITY</h4>
+        <p>For an effective cyber security, an organization needs to coordinate
+          its efforts throughout its entire information system. Elements of cyber
+          compromise all of the following:
+        </p>
+        <img class="tile-img" src="./images/protection.svg" alt="tileImg"/>
+        <ul>
+          <li>Network security</li>
+          <li>Application security</li>
+          <li>Endpoint security</li>
+          <li> Data security</li>
+          <li> Identity management</li>
+          <li> Database and infrastructure security</li>
+          <li> Cloud security</li>
+          <li> Mobile security</li>
+          <li> Disaster recovery/business continuity planning</li>
+          <li> End-user education</li>
+        </ul>
+      </section>
+      <br />
+    </div>
+  </main>
+
+  <!--  this is the footer section  ===================-->
+  <footer>
+    <div class="footer-topline">
+      <div class="footer-container">
+        <div class="footer-subcontainer">
+          <p class="footer-text">Aaron Gunawardena</p>
+        </div>
+        <div class="footer-subcontainer">
+          <img class="contact-img" src="images/email-gray.svg" alt="email" />
+          <a class="contact-link" href="mailto:aaron@illukpitiya.net"> aaron@illukpitiya.net</a>
+        </div>
+        <div class="footer-subcontainer">
+          <img class="contact-img" src="images/phone-gray.svg" alt="contact" />
+          <a class="contact-link" href="call:0767945589"> 0767945589</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottomline">
+      <p class="footer-bottomline_text">
+         Image Sources : Icons - flaticon.com  &  Other Images : Pixabay.com
+      </p>
+    </div>
+  </footer>
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('../serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+/*---------------------------------------------------------------------------
+colours used
+
+#0b0e1e       : header (intro), footer,h3,
+#b3b3b3     : h1,qualifications table background,
+#f2f2f2     : Nav font, body background, section background, h2, footer font, footer link
+#4c4e61      : Nav hoover font, h4, li, general text
+#ea5353        : Nav background, home-section 1
+#45d3d3      : home-section 2, buttons
+#fcaf4a       : Nav Hoover, home-section 3, buttons
+---------------------------------------------------------------------------*/
+/*------formatting for the general website----------------------------------*/
+/* font-family: 'Kavivanar', cursive;
+     font-family: 'Poppins', sans-serif*/
+body {
+  border: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 0;
+  color: #b3b3b3;
+  font-family: 'Kavivanar', cursive;
+  font-size: x-small;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+h2 {
+  border: 0;
+  color: #f2f2f2;
+  font-family: 'Kavivanar', cursive;
+  font-size: medium;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+h3 {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+
+h4 {
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+hr {
+  border-style: none;
+  border-width: 5px;
+  width: 5%;
+}
+
+li {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+.Introduction h1 {
+  font-size: large;
+}
+
+/*-----This is the style for the navigation bar----------------------------*/
+.mainNav {
+  position: sticky;
+  top: 0;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #ea5353;
+}
+
+.mainNav li {
+  flex-grow: 1;
+  width: 50px;
+}
+
+.navText {
+  padding-left: 20px;
+}
+
+.mainNav a {
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 1em center;
+  min-height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+.mainNav a:hover {
+  background-color: #fcaf4a;
+  color: #4c4e61;
+}
+
+/*-------This is for the banner part in header in all pages----------------*/
+#intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #0b0e1e;
+  align-items: center;
+}
+
+#intro .Introduction {
+  margin: 0;
+  width: calc(33% - .4em);
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mainImg {
+  margin-left: auto;
+  margin-left: 0;
+  max-width: 350px;
+  width: 80%;
+}
+
+/*-------This is the style for the  3 sections of the pages ------------------*/
+.tile {
+  background-color: #f2f2f2;
+  margin: 10px 0px 0px 0px;
+  padding: 20px 10px 20px 10px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-tile {
+  background-color: #f2f2f2;
+  margin: 10px 0px 0px 0px;
+  padding: 20px 10px 20px 10px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 230px;
+}
+
+.tile ul {
+  border: 0;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+}
+
+.tile-img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+
+
+.whoami {
+  border-bottom: 3px solid #ea5353;
+}
+
+.whaticando {
+  border-top: 3px solid #45d3d3;
+}
+
+.icanhelp {
+  border-top: 3px solid #fcaf4a;
+}
+
+/* ------This is the css for the footer in all pages ------------------------*/
+.footer-topline {
+  background-color: #0b0e1e;
+  border: 0;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 8px;
+}
+
+.footer-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-subcontainer {
+  width: 30%;
+  align-items: center;
+}
+
+.footer-text {
+  color: #f2f2f2;
+  padding: 3px 0 0 0px;
+  font-size: 6px;
+}
+
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 5px;
+}
+
+.contact-img {
+  padding: 0 10px 0 10px;
+  width: 12%;
+}
+
+.footer-bottomline {
+  background-color: #f2f2f2;
+  padding: 10px 0 10px 0;
+}
+
+.footer-bottomline_text {
+  font-size: .6em;
+  font-style: italic;
+}
+
+/*-------------Qualification Page : Table section----------------------------*/
+table {
+  width: 50%;
+  color: #4c4e61;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  line-height: 1.5;
+  border: 1px;
+  margin: 0px 0 0 -35px;
+}
+
+table th {
+  font-size: small;
+  background-color: #4c4e61;
+  color: #f2f2f2;
+  padding: 5px;
+  height: 5%;
+}
+
+td:hover {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #b3b3b3;
+  font-size: .8rem;
+  padding: 5px;
+  line-height: 1.2em;
+}
+
+/*------------ Buttons in Home Page, Skills Page ---------------------*/
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-Home {
+  background-color: #fcaf4a;
+}
+
+.button-Demo1 {
+  background-color: #fcaf4a;
+}
+
+.button-Demo2 {
+  background-color: #45d3d3;
+}
+.button-store {
+  background-color: #fcaf4a;
+}
+
+/*------MEDIA QUERIES---------------------------------------------------------------------*/
+/*MEDIA QUERY FOR IPAD PRO--------------------------------*/
+@media only screen and (min-width: 769px) {
+  .mainImg {
+    margin-left: auto;
+    margin-left: 0;
+    max-width: 350px;
+    width: 35%;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .Introduction h1 {
+      font-size: 1rem;
+    }
+
+    h1 {
+      border: 0;
+      color: #b3b3b3;
+      font-family: 'Kavivanar', cursive;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0px 0px 0 20px;
+    }
+
+    h2 {
+      border: 0;
+      color: #f2f2f2;
+      font-family: 'Kavivanar', cursive;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0px 0px 0 20px;
+    }
+
+    .tile-img {
+      width: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .skill-img {
+      width: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: right;
+    }
+
+    table {
+      width: 100%;
+      color: #4c4e61;
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      line-height: 1.5;
+      border: 1px;
+    }
+
+    table th {
+      font-size: x-large;
+      background-color: #4c4e61;
+      color: #f2f2f2;
+      padding: 10px;
+      height: 25%;
+    }
+
+    td:hover {
+      background-color: #f2f2f2;
+    }
+
+    td {
+      background-color: #b3b3b3;
+      font-size: 0.9rem;
+      padding: 10px;
+      line-height: 1.5;
+    }
+
+    .footer-topline {
+      background-color: #0b0e1e;
+      border: 0;
+      margin: 0;
+      padding: 10px 0px 10px 0px;
+      font-family: 'Poppins', sans-serif;
+      font-size: small;
+    }
+
+    .footer-text {
+      color: #f2f2f2;
+      font-size: medium;
+      padding: 0px 0 0 5px;
+    }
+
+    .contact-link {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      color: #f2f2f2;
+      font-size: medium;
+    }
+  }
+
+  /*MEDIA QUERY FOR DESKTOP-------------------------------------*/
+  @media only screen and (min-width: 1300px) {
+    .Introduction h1 {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      border: 0;
+      color: #b3b3b3;
+      font-family: 'Kavivanar', cursive;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0px 0px 0 20px;
+    }
+
+    h2 {
+      border: 0;
+      color: #f2f2f2;
+      font-family: 'Kavivanar', cursive;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0px 0px 0 20px;
+    }
+
+    .mainImg {
+      margin-left: auto;
+      margin-left: 0;
+      max-width: 350px;
+      width: 40%;
+    }
+
+    .tile-img {
+      width: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .skill-img {
+      width: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: right;
+    }
+
+    table {
+      width: 100%;
+      color: #4c4e61;
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      line-height: 1.5;
+      border: 1px;
+    }
+
+    table th {
+      font-size: x-large;
+      background-color: #4c4e61;
+      color: #f2f2f2;
+      padding: 10px;
+      height: 25%;
+    }
+
+    td:hover {
+      background-color: #f2f2f2;
+    }
+
+    td {
+      background-color: #b3b3b3;
+      font-size: 0.9rem;
+      padding: 10px;
+      line-height: 1.5;
+    }
+
+    .footer-topline {
+      background-color: #0b0e1e;
+      border: 0;
+      margin: 0;
+      padding: 10px 0px 10px 0px;
+      font-family: 'Poppins', sans-serif;
+      font-size: small;
+    }
+
+    .footer-text {
+      color: #f2f2f2;
+      font-size: large;
+      padding: 0px 0 0 5px;
+    }
+
+    .contact-link {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      color: #f2f2f2;
+      font-size: large;
+    }
+  }
+}

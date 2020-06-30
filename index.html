@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is a site that shows my personal portfolio">
+  <title>Aaron: Home</title>
+  <link href="style/styleMain.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+
+<body>
+
+  <!--  this is the header section : includes nav bar and banner  ==================-->
+  <header>
+
+    <div id="intro">
+      <section class="Introduction">
+        <h1>Hello ! </h1>
+        <h2>I am Aaron ...</h2>
+        <h1> Cyber Security Analyst</h1>
+      </section>
+      <section class="Introduction">
+        <img class="mainImg" src="images/Aaron.jpg" alt ="main_image"/>
+      </section>
+    </div>
+    <nav class="mainNav">
+      <ul>
+        <li><a href="index.html"><span class="navText">Home</span></a></li>
+        <li><a href="qualifications.html"><span class="navText">Qualifications</span></a></li>
+        <li><a href="skills.html"><span class="navText">Skills</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--  this is the first section ; Who Am I ========-->
+    <section class="tile">
+      <img class="tile-img" src="./images/WhoAmI.svg" alt="WhoAmI-img" />
+      <h4>Who am I...</h4>
+      <p>I am a passionate cyber security analyst driven by the desire to fight “computer crime“, seek a career at entry
+        level to protect IT infrastructure, data & privacy of organisations.
+        With this in aim, I am continually improving my technical skills to be among the 'best of bread', in this profession.
+      </p>
+      <br />
+      <p>I am a confident communicator with analytical mindset.</p>
+      <hr class="whoami" />
+    </section>
+
+    <!--this is the second section ; What I can do for you ============-->
+    <section class="tile ">
+      <img class="tile-img" src="./images/WhatICanDo.svg" alt="WhatICanDo-img" />
+      <h4>What I can do for you...</h4>
+      <p>I can help you to protect your organisation by employing a range of technologies and processes to prevent, detect and manage cyber threats. This can include protection of computers, data, networks and programmes.</p>
+      <p>I can keep up to date with the latest security and technology developments, research/evaluate emerging cyber security threats and ways to manage them.<br><br>
+        Also I am good at …
+      </p>
+      <ol type="1">
+        <li>Ethical Hacking
+        <ul>
+          <li>simulating security breaches</li>
+          <li>Exposing weak points and identifying potential threats</li>
+          <li>Penetration testing</li>
+        </ul></li>
+
+        <li>Incident Responce
+        <ul>
+          <li>Managing the negative effects of an attack or breach, from minimizing the impact to altering security controls for future prevention</li>
+        </ul></li>
+        <li>Computer Forensics
+        <ul>
+          <li>Prevention of crime through the collection, analysis, and reporting of data and creating evidence in the event of a breach.</li>
+        </ul></li>
+        <li>Reverse Engineering
+        <ul>
+          <li>Identifying why a piece of software does what it does to patch a bug or analyse malware</li>
+        </ul></li>
+      </ol>
+      <hr class="whaticando" />
+    </section>
+
+    <!--  this is the third section ; I can help ==================-->
+    <section class="tile ">
+      <img class="tile-img" src="./images/ICanHelp.svg" alt="ICanHelp-img" />
+      <h4>I can help ...</h4>
+      <p>I’m currently available for entrylevel cyber security work.</p>
+      <p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+      <br />
+      <br />
+      <a class="button button-Home" href="mailto:aaron@illukpitiya.net"> Message Me</a>
+      <hr class="icanhelp" />
+
+
+    </section>
+  </main>
+
+  <!--  this is the footer section  ==========================-->
+    <footer  >
+      <div class="footer-topline">
+        <div class="footer-container">
+          <div class="footer-subcontainer">
+            <p class="footer-text">Aaron Gunawardena</p>
+          </div>
+          <div class="footer-subcontainer">
+            <img class="contact-img" src="images/email-gray.svg" alt ="email" />
+            <a class="contact-link" href="mailto:aaron@illukpitiya.net"> aaron@illukpitiya.net</a>
+          </div>
+          <div class="footer-subcontainer">
+             <img class="contact-img" src="images/phone-gray.svg" alt ="contact" />
+             <a class="contact-link" href="call:0767945589"> 0767945589</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottomline">
+        <p class="footer-bottomline_text">
+           Image Sources : Icons - flaticon.com  &  Other Images : Pixabay.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      //check whether browser support service workers
+      if ('serviceWorker' in navigator) {
+          //wait until page loaded to avoid delaying rendering
+          window.addEventListener('load', function() {
+              //register service worker
+              navigator.serviceWorker.register('../serviceworker.js').then(
+                  function(registration) {
+                      console.log('Service worker registration successful', 
+                                   registration);
+                  }, 
+                  function(err) {
+                      console.log('Service worker registration failed', err);
+              });
+          });
+      }
+      </script>
+</body>
+</html>

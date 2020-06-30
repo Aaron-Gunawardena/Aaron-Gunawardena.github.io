@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a site that shows my personal portfolio">
+    <title>Aaron : Qualifications</title>
+    <link href="style/styleMain.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+
+
+    <body>
+      <header>
+
+        <div id="intro">
+          <section class="Introduction">
+            <img class="mainImg" src="images/Qualifications.jpg" alt="main"/>
+          </section>
+          <section class="Introduction">
+            <h2>Aaron's</h2>
+            <h1>Qualifications</h1>
+          </section>
+        </div>
+        <nav class="mainNav">
+          <ul>
+            <li><a href="index.html"><span class="navText">Home</span></a></li>
+            <li><a href="qualifications.html"><span class="navText">Qualifications</span></a></li>
+            <li><a href="skills.html"><span class="navText">Skills</span></a></li>
+          </ul>
+        </nav>
+
+
+      </header>
+
+        <main>
+          <!--  this is the first section ; Who Am I=======================-->
+          <section class="tile">
+            <p>
+              My professional & academic achievements to-date in my desire to archive my career ambitions is summarised below.
+              This is only a beginning but my plan is to develop my skills whist gaining hands on experience handing real business issues.
+            </p>
+
+          </section>
+
+            <section class ="tile">
+                <table>
+                    <tr>
+                        <td rowspan="4">Qualifications</td>
+                        <th>Academic</th>
+                        <th>Professional</th>
+                        <th>Extra curricular</th>
+                    </tr>
+                    <tr>
+                        <td>Passed GCE A/L with 2Bs & 1C</td>
+                        <td>Certified Ethical Hacker</td>
+                        <td>Deputy Head prefect in School</td>
+                    </tr>
+                    <tr>
+                        <td>Passed GCE O/L with 3As,3Bs & 3Cs</td>
+                        <td>CCNA Cerified</td>
+                        <td>Memeber of the Roteract club of colombo</td>
+                    </tr>
+                    <tr>
+                        <td>Persuing a degree in cyber security</td>
+                        <td>Memeber of the british computer society</td>
+                        <td>Leader of the school choir</td>
+                    </tr>
+                  <tfoot>
+                        <tr>
+                            <td colspan="4">References will be provided upon request</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                <br />
+                <br />
+            </section>
+
+        </main>
+
+        <!--  this is the footer section  =======================-->
+          <footer  >
+            <div class="footer-topline">
+              <div class="footer-container">
+                <div class="footer-subcontainer">
+                  <p class="footer-text">Aaron Gunawardena</p>
+                </div>
+                <div class="footer-subcontainer">
+                  <img class="contact-img" src="images/email-gray.svg" alt="email" />
+                  <a class="contact-link" href="mailto:aaron@illukpitiya.net"> aaron@illukpitiya.net</a>
+                </div>
+                <div class="footer-subcontainer">
+                   <img class="contact-img" src="images/phone-gray.svg" alt="contact" />
+                   <a class="contact-link" href="call:0767945589"> 0767945589</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="footer-bottomline">
+              <p class="footer-bottomline_text">
+                 Image Sources : Icons - flaticon.com  &  Other Images : Pixabay.com
+              </p>
+            </div>
+          </footer>
+          <script>
+            //check whether browser support service workers
+            if ('serviceWorker' in navigator) {
+                //wait until page loaded to avoid delaying rendering
+                window.addEventListener('load', function() {
+                    //register service worker
+                    navigator.serviceWorker.register('../serviceworker.js').then(
+                        function(registration) {
+                            console.log('Service worker registration successful', 
+                                         registration);
+                        }, 
+                        function(err) {
+                            console.log('Service worker registration failed', err);
+                    });
+                });
+            }
+            </script>
+      </body>
+      </html>

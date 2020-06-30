@@ -1,0 +1,367 @@
+/*---------------------------------------------------------------------------
+colours used
+#f2f2f2 : background, tile background, h2 , footer text
+#b3b3b3 : h1
+#413C69 : h1, h3, h4
+#ad62aa : section 1, Navigation Hoover
+#4A47A3 : section 2,
+#413C69 : section 3, Navigation bar, footer, banner
+
+---------------------------------------------------------------------------*/
+
+    /* font-family: 'Kavivanar', cursive;
+     font-family: 'Poppins', sans-serif*/
+
+  body {
+    border: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    border: 0;
+    color: #b3b3b3;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0px 0px 0 50px;
+  }
+
+  h2 {
+    border: 0;
+    color: #f2f2f2;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px 0px 0 50px;
+  }
+
+  h3 {
+    border: 0;
+    color: #413C69;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+
+  h4 {
+    color: #413C69;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 ;
+    padding: 10px;
+  }
+
+  p {
+    border: 0;
+    color: #413C69;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0 5px 0 10px;
+    line-height: 1.5;
+  }
+
+  hr {
+      border-style: none;
+      border-width: 5px;
+      width: 5%;
+    }
+
+  li {
+    color: #413C69;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0 5px 0 10px;
+    line-height: 1.5;
+  }
+
+  /*-----This is the style for the navigation bar----------------------------*/
+  .mainNav{
+      position: sticky;
+      top:0;
+  }
+  .mainNav ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      background-color: #413C69 ;
+  }
+  .mainNav li{
+      flex-grow: 1;
+      width: 100%;
+  }
+  .navText{
+      padding-left: 20px;
+      font-size: small;
+  }
+  .mainNav a{
+      background-repeat:no-repeat;
+      background-size: 40px auto;
+      background-position: 1em center;
+      min-height:50px;
+      line-height: 50px;
+      text-decoration: none;
+      display:block;
+      color : #f2f2f2;
+      font-family: 'Poppins', sans-serif;
+      font-size: medium;
+      text-align:center;
+  }
+  .mainNav a:hover{
+      background-color: #4A47A3;
+      color: #f2f2f2;
+  }
+
+
+/*-------This is for the banner part in header in all pages----------------*/
+#intro{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    background-color: #413C69  ;
+    align-items: center;
+}
+#intro .Introduction{
+    margin:0;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+}
+.mainImg {
+  margin-left: auto;
+  margin-left: 0;
+  max-width: 350px;
+  width: 90%;
+  height: auto;
+}
+
+
+
+/*-------This is the style for the  3 sections------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.tile {
+    background-color: #f2f2f2;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+    width: 80%;
+    display :block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.tile ul{
+    border: 0;
+    color: #413C69;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 10px 5px 0 30px;
+}
+
+  .tile-img {
+    width : 40%;
+    display: block;
+    padding: 0 20px 0 0;
+    float: right;
+  }
+
+  .cyberSec-def {
+    border-top: 5px solid #ad62aa;
+    border-bottom: 1px solid #ad62aa;
+  }
+  .cyberSec-imp {
+    border-top: 5px solid #4A47A3;
+    border-bottom: 1px solid #4A47A3;
+  }
+  .cyberSec-Chall {
+    border-top: 5px solid #413C69;
+    border-bottom: 1px solid #413C69;
+  }
+
+/* --------- tile animation --------------------------------------------------*/
+.tile-animation {
+  animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,0) 0s 10 alternate both;
+}
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px;box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+
+/* ------This is the css for the footer  ------------------------*/
+.footer-topline {
+  background-color: #413C69;
+  border: 0;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+.footer-container {
+  width :70%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-subcontainer {
+  width :30%
+}
+.footer-text {
+  color:#f2f2f2;
+  padding: 6px 0 0 0px;
+  font-size:6px;
+}
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color:#f2f2f2;
+  font-size: 5px;
+}
+.contact-img {
+  padding: 0 10px 0 10px;
+  width: 12%;
+}
+.footer-bottomline {
+  background-color: #f2f2f2;
+  padding: 10px 0 10px 0;
+}
+.footer-bottomline_text {
+  font-size: .6em;
+  font-style: italic;
+}
+
+/*------MEDIA QUERIES---------------------------------------------------------------------*/
+
+/*MEDIA QUERY FOR IPAD PRO--------------------------------*/
+@media only screen and (min-width: 769px) {
+  .mainImg {
+    margin-left: auto;
+    margin-left: 0;
+    max-width: 350px;
+    width: 40%;
+}
+h1 {
+  border: 0;
+  color: #b3b3b3;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0px 0px 0 20px;
+}
+
+h2 {
+  border: 0;
+  color: #f2f2f2;
+  font-family: 'Kavivanar', cursive;
+  font-size: 3rem;
+  margin: 0;
+  padding: 5px 0px 0 20px;
+}
+.tile-img {
+  width : 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.footer-topline {
+  background-color: #413C69;
+  border: 0;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Poppins', sans-serif;
+ font-size: small;
+}
+.footer-text {
+  color:#f2f2f2;
+  font-size: large;
+  padding: 0px 0 0 5px;
+}
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color:#f2f2f2;
+  font-size: medium;
+}
+.navText{
+  padding-left: 20px;
+  font-size: medium;
+}
+}
+
+/*MEDIA QUERY FOR DESKTOP-------------------------------------*/
+
+@media only screen and (min-width: 1300px) {
+  h1 {
+    border: 0;
+    color: #b3b3b3;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  h2 {
+    border: 0;
+    color: #f2f2f2;
+    font-family: 'Kavivanar', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  .mainImg {
+    margin-left: auto;
+    margin-left: 0;
+    max-width: 350px;
+    width: 40%;
+}
+
+.tile-img {
+  width : 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.footer-topline {
+  background-color: #413C69;
+  border: 0;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.footer-text {
+  color:#f2f2f2;
+  font-size: large;
+  padding: 0px 0 0 5px;
+}
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color:#f2f2f2;
+  font-size: large;
+}
+.navText{
+  padding-left: 20px;
+  font-size:large;
+}
+}

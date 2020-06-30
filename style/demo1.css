@@ -1,0 +1,409 @@
+/*---------------------------------------------------------------------------
+colours used
+#f2f2f2 : background, tile background, h2 , footer text
+#b3b3b3 : h1
+#413C69 : h3, h4
+#b1b493 : section 1
+#639a67 : section 2
+#4f8a8b : section 3
+#0b0e1e : Navigation bar, footer
+#fcaf4a : Navigation Hoover
+
+---------------------------------------------------------------------------*/
+/* font-family: 'Kavivanar', cursive;
+     font-family: 'Poppins', sans-serif*/
+body {
+  border: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 0;
+  color: #413C69;
+  font-family: 'Kavivanar', cursive;
+  font-size: small;
+  margin: 0;
+  padding: 0px 0px 0 50px;
+}
+
+h2 {
+  border: 0;
+  color: #f2f2f2;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 10px 0px 0 50px;
+}
+
+h3 {
+  border: 0;
+  color: #413C69;
+  font-family: 'Kavivanar', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+
+h4 {
+  color: #413C69;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  border: 0;
+  color: #413C69;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+hr {
+  border-style: none;
+  border-width: 5px;
+  width: 5%;
+}
+
+li {
+  color: #413C69;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+/*-----This is the style for the navigation bar----------------------------*/
+.mainNav {
+  position: sticky;
+  top: 0;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #0b0e1e;
+}
+
+.mainNav li {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.navText {
+  padding-left: 20px;
+}
+
+.mainNav a {
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 1em center;
+  min-height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+.mainNav a:hover {
+  background-color: #fcaf4a;
+  color: #413C69;
+}
+
+/*-------This is for the banner part in header in all pages----------------*/
+#intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #4f8a8b;
+  align-items: center;
+}
+
+#intro .Introduction {
+  margin: 0;
+  width: calc(33% - .4em);
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mainImg {
+  margin-left: auto;
+  margin-left: 0;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+/*-------This is the style for the  3 sections------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.tile {
+    background-color: #f2f2f2;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+    width: 80%;
+    display :block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.tile ul {
+  border: 0;
+  color: #413C69;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 10px 5px 0 30px;
+}
+
+.tile-img {
+  width: 50%;
+  height: auto;
+  display: block;
+  padding: 0 20px 0 0;
+  float: right;
+}
+
+.cyberSec-def {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #b1b493;
+  border-top: 5px solid #b1b493;
+}
+
+.cyberSec-imp {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #639a67;
+  border-top: 5px solid #639a67;
+}
+
+.cyberSec-Chall {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #4f8a8b;
+  border-top: 5px solid #4f8a8b;
+}
+
+/* --------- tile animation --------------------------------------------------*/
+.tile-animation {
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* ------This is the css for the footer in all pages ------------------------*/
+.footer-topline {
+  background-color: #0b0e1e;
+  border: 0;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-subcontainer {
+  width: 30%
+}
+
+.footer-text {
+  color: #f2f2f2;
+  padding: 10px 0 0 0px;
+  font-size: 6px;
+}
+
+.contact-link {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 5px;
+}
+
+.contact-img {
+  padding: 0 10px 0 10px;
+  width: 12%;
+}
+
+.footer-bottomline {
+  background-color: #f2f2f2;
+  padding: 10px 0 10px 0;
+}
+.footer-bottomline_text {
+  font-size: .6em;
+  font-style: italic;
+}
+/*------MEDIA QUERIES---------------------------------------------------------------------*/
+/*MEDIA QUERY FOR IPAD PRO--------------------------------*/
+@media only screen and (min-width: 769px) {
+  .mainImg {
+    margin-left: auto;
+    margin-left: 0;
+    max-width: 350px;
+    width: 35%;
+  }
+
+  h1 {
+    border: 0;
+    color: #b3b3b3;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  h2 {
+    border: 0;
+    color: #f2f2f2;
+    font-family: 'Kavivanar', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  .tile-img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-topline {
+    background-color: #0b0e1e;
+    border: 0;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+  }
+
+  .footer-text {
+    color: #f2f2f2;
+    font-size: large;
+    padding: 0px 0 0 5px;
+  }
+
+  .contact-link {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #f2f2f2;
+    font-size: medium;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tile {
+    background-color: #f2f2f2;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 10px 20px 10px;
+    width: 50%;
+    display: block;
+  }
+}
+
+/*MEDIA QUERY FOR DESKTOP-------------------------------------*/
+@media only screen and (min-width: 1300px) {
+  h1 {
+    border: 0;
+    color: #b3b3b3;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  h2 {
+    border: 0;
+    color: #f2f2f2;
+    font-family: 'Kavivanar', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0px 0px 0 20px;
+  }
+
+  .mainImg {
+    margin-left: auto;
+    margin-left: 0;
+    max-width: 350px;
+    width: 40%;
+  }
+
+  .tile-img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-topline {
+    background-color: #0b0e1e;
+    border: 0;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer-text {
+    color: #f2f2f2;
+    font-size: large;
+    padding: 0px 0 0 5px;
+  }
+
+  .contact-link {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #f2f2f2;
+    font-size: large;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tile {
+    background-color: #f2f2f2;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 10px 20px 10px;
+    width: 50%;
+    display: block;
+  }  
+}

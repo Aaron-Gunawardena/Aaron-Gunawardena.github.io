@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Aaron : Coffee Store</title>
+  <meta name="description" content="This is the description">
+  <link rel="stylesheet" href="./style/styleCoffee.css" />
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <script src="./scripts/coffeestore.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div id="intro">
+      <section class="Introduction">
+        <img class="mainImg" src="./images/coffeeCup.png" alt="main" />
+      </section>
+      <section class="Introduction">
+        <h2>Aaron's Jumpin' Beans Cafe</h2>
+        <h1>Good to the Last Drop!</h1>
+      </section>
+    </div>
+  </header>
+
+  <!--===== This is the Coffee Catalogue section =======================-->
+  <section class="container content-section">
+
+
+    <!--===== first item : Latte ===================================-->
+    <div class="shop-item">
+
+      <span class="shop-item-title">Latte</span>
+      <div class="shop-item-choices">
+        <img class="shop-item-image" src="./images/latte.jpg" alt="latte">
+        <form>
+          <h4>Size</h4>
+          <input type="radio" name="sizeLatte" value=200 onclick="latteChoiceMade();" >
+          <label for="small">Small : LKR 200</label><br>
+          <input type="radio" name="sizeLatte" value=250 checked="checked" onclick="latteChoiceMade();">
+          <label for="medium">Medium : LKR 250</label><br>
+          <input type="radio" name="sizeLatte" value=300 onclick="latteChoiceMade();">
+          <label for="large">Large : LKR 300</label><br>
+        </form>
+        <form>
+          <h4>Choice of Milk</h4>
+          <input type="radio" name="milk" value="wholemilk">
+          <label for="wholemilk">Whole Milk</label><br>
+          <input type="radio" name="milk" value="semiskimmed" checked="checked">
+          <label for="semiskimmed">Semi-Skimmed</label><br>
+          <input type="radio" name="milk" value="skimmed">
+          <label for="skimmed">Skimmed</label><br>
+          <input type="radio"  name="milk" value="coconut">
+          <label for="coconut">Coconut Milk</label><br>
+          <input type="radio" name="milk" value="soya">
+          <label for="soya">Soya Milk</label><br>
+        </form>
+        <form>
+          <h4>Extras</h4>
+          <input type="checkbox" name="extrasLatte" value=0 onclick="latteChoiceMade();">
+          <label for="sugar"> Sugar</label><br>
+          <input type="checkbox" name="extrasLatte" value=50 onclick="latteChoiceMade();">
+          <label for="cream"> Cream : LKR 50</label><br>
+          <input type="radio"  name="extrasLatte" value=25 onclick="latteChoiceMade();">
+          <label for="syrup1"> Syrup - 1 Shot : LKR 25</label><br />
+          <input type="radio"  name="extrasLatte" value=50 onclick="latteChoiceMade();">
+          <label for="syrup2"> Syrup - 2 Shots : LKR 50</label><br />
+          <input type="radio"  name="extrasLatte" value=75 onclick="latteChoiceMade();">
+          <label for="syrup3"> Syrup - 3 Shots : LKR 75</label><br />
+        </form>
+        <form>
+          <label for="qty">
+            <h4>Quantity</h4>
+          </label><br>
+          <input class="shop-item-qty" type="text" name="qtyLatte" size="4" oninput="latteChoiceMade();"><br>
+        </form>
+
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">LKR 250</span>
+        <button class="btn btn-secondary shop-item-button" type="button">Favourite</button>
+        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+      </div>
+    </div>
+
+    <!--============= second item : Cappucchino =============================-->
+    <div class="shop-item">
+      <span class="shop-item-title">Cuppuccino</span>
+      <div class="shop-item-choices">
+        <img class="shop-item-image" src="./images/cuppuccino.jpg" alt="cupacino">
+
+        <form>
+          <h4>Size</h4>
+          <input type="radio" name="sizeCupp" value=200 onclick="cuppChoiceMade();" >
+          <label for="small">Small : LKR 200</label><br>
+          <input type="radio" name="sizeCupp" value=250 checked="checked" onclick="cuppChoiceMade();">
+          <label for="medium">Medium : LKR 250</label><br>
+          <input type="radio" name="sizeCupp" value=300 onclick="cuppChoiceMade();">
+          <label for="large">Large : LKR 300</label><br>
+        </form>
+        <form>
+          <h4>Choice of Milk</h4>
+          <input type="radio" name="milk" value="wholemilk">
+          <label for="wholemilk">Whole Milk</label><br>
+          <input type="radio" name="milk" value="semiskimmed" checked="checked">
+          <label for="semiskimmed">Semi-Skimmed</label><br>
+          <input type="radio" name="milk" value="skimmed">
+          <label for="skimmed">Skimmed</label><br>
+          <input type="radio"  name="milk" value="coconut">
+          <label for="coconut">Coconut Milk</label><br>
+          <input type="radio" name="milk" value="soya">
+          <label for="soya">Soya Milk</label><br>
+        </form>
+        <form>
+          <h4>Extras</h4>
+          <input type="checkbox" name="extrasCupp" value=0 onclick="cuppChoiceMade();">
+          <label for="sugar"> Sugar</label><br>
+          <input type="checkbox" name="extrasCupp" value=50 onclick="cuppChoiceMade();">
+          <label for="cream"> Cream : LKR 50</label><br>
+          <input type="radio"  name="extrasCupp" value=25 onclick="cuppChoiceMade();">
+          <label for="syrup1"> Syrup - 1 Shot : LKR 25</label><br />
+          <input type="radio"  name="extrasCupp" value=50 onclick="cuppChoiceMade();">
+          <label for="syrup2"> Syrup - 2 Shots : LKR 50</label><br />
+          <input type="radio"  name="extrasCupp" value=75 onclick="cuppChoiceMade();">
+          <label for="syrup3"> Syrup - 3 Shots : LKR 75</label><br />
+        </form>
+        <form>
+          <label for="qty">
+            <h4>Quantity</h4>
+          </label><br>
+          <input class="shop-item-qty" type="text" name="qtyCupp" size="4" oninput="cuppChoiceMade();"><br>
+        </form>
+
+      </div>
+
+      <div class="shop-item-details">
+        <span class="shop-item-price">LKR 250</span>
+        <button class="btn btn-secondary shop-item-button" type="button">Favourite</button>
+        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+      </div>
+    </div>
+
+    <!--================third item : Flat White ======================-->
+    <div class="shop-item">
+      <span class="shop-item-title">Flat White</span>
+      <div class="shop-item-choices">
+        <img class="shop-item-image" src="./images/flatwhite.jpg" alt="White">
+
+        <form>
+          <h4>Size</h4>
+          <input type="radio" name="sizeFlat" value=200 onclick="flatChoiceMade();" >
+          <label for="small">Small : LKR 200</label><br>
+          <input type="radio" name="sizeFlat" value=250 checked="checked" onclick="flatChoiceMade();">
+          <label for="medium">Medium : LKR 250</label><br>
+          <input type="radio" name="sizeFlat" value=300 onclick="flatChoiceMade();">
+          <label for="large">Large : LKR 300</label><br>
+        </form>
+        <form>
+          <h4>Choice of Milk</h4>
+          <input type="radio" name="milk" value="wholemilk">
+          <label for="wholemilk">Whole Milk</label><br>
+          <input type="radio" name="milk" value="semiskimmed" checked="checked">
+          <label for="semiskimmed">Semi-Skimmed</label><br>
+          <input type="radio" name="milk" value="skimmed">
+          <label for="skimmed">Skimmed</label><br>
+          <input type="radio"  name="milk" value="coconut">
+          <label for="coconut">Coconut Milk</label><br>
+          <input type="radio" name="milk" value="soya">
+          <label for="soya">Soya Milk</label><br>
+        </form>
+        <form>
+          <h4>Extras</h4>
+          <input type="checkbox" name="extrasFlat" value=0 onclick="flatChoiceMade();">
+          <label for="sugar"> Sugar</label><br>
+          <input type="checkbox" name="extrasFlat" value=50 onclick="flatChoiceMade();">
+          <label for="cream"> Cream : LKR 50</label><br>
+          <input type="radio"  name="extrasFlat" value=25 onclick="flatChoiceMade();">
+          <label for="syrup1"> Syrup - 1 Shot : LKR 25</label><br />
+          <input type="radio"  name="extrasFlat" value=50 onclick="flatChoiceMade();">
+          <label for="syrup2"> Syrup - 2 Shots : LKR 50</label><br />
+          <input type="radio"  name="extrasFlat" value=75 onclick="flatChoiceMade();">
+          <label for="syrup3"> Syrup - 3 Shots : LKR 75</label><br />
+        </form>
+        <form>
+          <label for="qty">
+            <h4>Quantity</h4>
+          </label><br>
+          <input class="shop-item-qty" type="text" name="qtyFlat" size="4" oninput="flatChoiceMade();"><br>
+        </form>
+      </div>
+
+      <div class="shop-item-details">
+        <span class="shop-item-price">LKR 250</span>
+        <button class="btn btn-secondary shop-item-button" type="button">Favourite</button>
+        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+      </div>
+    </div>
+
+    <!--==== fourth item : Espresso =====================================-->
+    <div class="shop-item">
+      <span class="shop-item-title">Espresso</span>
+      <div class="shop-item-choices">
+        <img class="shop-item-image" src="./images/espresso.jpg" alt="espresso">
+        <form>
+          <h4>Size</h4>
+          <input type="radio" name="sizeEs" value=200 onclick="esChoiceMade();" >
+          <label for="small">Small : LKR 200</label><br>
+          <input type="radio" name="sizeEs" value=250 checked="checked" onclick="esChoiceMade();">
+          <label for="medium">Medium : LKR 250</label><br>
+          <input type="radio" name="sizeEs" value=300 onclick="esChoiceMade();">
+          <label for="large">Large : LKR 300</label><br>
+        </form>
+        <form>
+          <h4>Extras</h4>
+          <input type="checkbox" name="extrasEs" value=0 onclick="esChoiceMade();">
+          <label for="sugar"> Sugar</label><br>
+          <input type="checkbox" name="extrasEs" value=50 onclick="esChoiceMade();">
+          <label for="cream"> Cream : LKR 50</label><br>
+          <input type="radio"  name="extrasEs" value=25 onclick="esChoiceMade();">
+          <label for="syrup1"> Syrup - 1 Shot : LKR 25</label><br />
+          <input type="radio"  name="extrasEs" value=50 onclick="esChoiceMade();">
+          <label for="syrup2"> Syrup - 2 Shots : LKR 50</label><br />
+          <input type="radio"  name="extrasEs" value=75 onclick="esChoiceMade();">
+          <label for="syrup3"> Syrup - 3 Shots : LKR 75</label><br />
+        </form>
+        <form>
+          <label for="qty">
+            <h4>Quantity</h4>
+          </label><br>
+          <input class="shop-item-qty" type="text" name="qtyEs" size="4" oninput="esChoiceMade();"><br>
+        </form>
+
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">LKR 250</span>
+        <button class="btn btn-secondary shop-item-button" type="button">Favourite</button>
+        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+      </div>
+    </div>
+    <!--=========== fifth item : Americano ======================================-->
+    <div class="shop-item">
+      <span class="shop-item-title">Americano</span>
+      <div class="shop-item-choices">
+        <img class="shop-item-image" src="./images/americano.jpg" alt="americano">
+        <form>
+          <h4>Size</h4>
+          <input type="radio" name="sizeAm" value=200 onclick="amChoiceMade();" >
+          <label for="small">Small : LKR 200</label><br>
+          <input type="radio" name="sizeAm" value=250 checked="checked" onclick="amChoiceMade();">
+          <label for="medium">Medium : LKR 250</label><br>
+          <input type="radio" name="sizeAm" value=300 onclick="amChoiceMade();">
+          <label for="large">Large : LKR 300</label><br>
+        </form>
+        <form>
+          <h4>Extras</h4>
+          <input type="checkbox" name="extrasAm" value=0 onclick="amChoiceMade();">
+          <label for="sugar"> Sugar</label><br>
+          <input type="checkbox" name="extrasAm" value=50 onclick="amChoiceMade();">
+          <label for="cream"> Cream : LKR 50</label><br>
+          <input type="radio"  name="extrasAm" value=25 onclick="amChoiceMade();">
+          <label for="syrup1"> Syrup - 1 Shot : LKR 25</label><br />
+          <input type="radio"  name="extrasAm" value=50 onclick="amChoiceMade();">
+          <label for="syrup2"> Syrup - 2 Shots : LKR 50</label><br />
+          <input type="radio"  name="extrasAm" value=75 onclick="amChoiceMade();">
+          <label for="syrup3"> Syrup - 3 Shots : LKR 75</label><br />
+        </form>
+        <form>
+          <label for="qtyAm">
+            <h4>Quantity</h4>
+          </label><br>
+          <input class="shop-item-qty" type="text" name="qtyAm" size="4" oninput="amChoiceMade();"><br>
+        </form>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">LKR 250</span>
+        <button class="btn btn-secondary fav-item-button" type="button">Favourite</button>
+        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+<!--== Order Details ===================================================-->
+
+  <section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">Item</span>
+      <span class="cart-price cart-header cart-column">Price</span>
+      <span class="cart-quantity cart-header cart-column">Quantity</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+    </div>
+    <div>
+      <button class="btn btn-secondary btn-addFavToOrder" type="button">Add Favourite to Order</button>
+      <button class="btn btn-primary btn-purchase" type="button">Place Order</button>
+    </div>
+
+  </section>
+  <!--==  this is the footer section  ========================-->
+  <footer  >
+
+    <div class="footer-bottomline">
+      <p class="footer-bottomline_text">
+        <span>Aaron Gunawardena</span>
+        <span><a class="contact-link footer-bottomline-text" href="mailto:aaron@illukpitiya.net"> Email : aaron@illukpitiya.net</a></span>
+        <a class="contact-link footer-bottomline-text" href="call:0767945589">Phone: 0767945589</a>
+        <span> |   Image Sources :  Pixabay.com</span>
+      </p>
+    </div>
+  </footer>
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('../serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+    </script>
+</body>
+</html>
+
